@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Change the font-family */
+    background-color: #121A21;
+    color: #E5E7EB;
+    z-index: 0;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between; /* Ensure space between logo and nav */
+    align-items: center;
+    padding: 10px 90px;
+    position: sticky;
+    z-index: 1;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between logo, text, and button */
+}   
+
+.logo-border {
+    position: sticky;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-border::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 55px;
+    height: 55px;
+    border: 4px solid transparent;
+    border-radius: 30%;
+    border-top-color: #667B8E;
+    border-right-color: #667B8E;
+    animation: swirl 4s linear infinite;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 2;
+    position: sticky;
+    background-color: transparent;
+}
+
+.page-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Change the font-family */
+    position: sticky;
+    overflow: hidden; /* Ensure the text doesn't overflow */
+}
+
+/* Swirl animation */
+@keyframes swirl {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* back button for every page */
+.back-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #23323f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Introduction Section */
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Rubik Glitch', sans-serif;
+    color: transparent;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+    background: linear-gradient(45deg, #e5b8ff, #b197fc, #b9f2ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.3));
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    
+}
+
+
+/* Responsive Media Grid */
+.container {
+    display: flex;
+    justify-content: center; /* Center the grid */
+    align-items: center;
+    min-height: 100vh; /* Ensure it fills the viewport */
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items */
+    padding: 0 4px;
+    max-width: 1200px; /* Limit width */
+}
+
+/* Columns for the grid */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 8px;
+}
+
+/* Style for media containers */
+.media-container {
+    position: relative;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+.media-container img,
+.media-container video {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Hover Effect for Description */
+.desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.media-container:hover .desc {
+    opacity: 1;
+}
+
+/* Responsive layout - Two columns for smaller screens */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* One column for very small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #121A21;
+    color: #E5E7EB;
+}

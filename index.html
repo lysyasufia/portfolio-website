@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyys's Page</title>
+    <link rel="stylesheet" href="css/css.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <header>
+                <div class="logo-container">
+                  <div class="logo-border">
+                    <img src="img/my logo.png" alt="Logo" class="logo">
+                  </div>
+                  <span class="page-title">Lyys's Page</span>
+                </div>
+              </header>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About me</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact"class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <main>
+        <section id="home"
+        <div class="profile">
+            <!-- Add your profile image here -->
+            <div class="profile-image">
+                <img src="img/me1.jpg" alt="Profile Image">
+            </div>
+            <div class="profile-text">
+                <h1>Hello! I am</h1>
+                <h2 id="animated-text"></h2>
+                <div class="text-container">
+                    <span id="animated-text"></span>
+                </div>
+                <p>A passionate and dedicated masscom student, driven by the ever-evolving world of technology and its limitless possibilities.</p>
+                <a href="#contact" class="contact-me">contact me</a>
+            </div>
+        </div>
+        </section>
+        
+    </main>
+    <script src="js/script.js"></script>"
+
+      <!-- About Me Section -->
+      <section id="about" class="about-section">
+        <h1 class="about-page-title">About Me</h1>
+        <div class="about-container">
+            <!-- Left Content -->
+            <div class="about-left">
+                <div class="about-box">
+                    <h2 class="about-title">A PEEK OF ME  ≽^• ˕ • ྀི≼</h2>
+                    <p class="about-description">
+                      Hi! I'm a dedicated mass communication student 
+                      with a creative enthusiast with passion for photography and videography. 
+                      These skills have honed my ability to manage content creation, 
+                      craft engaging visuals, 
+                      and bring fresh ideas to life. 
+                      I love turning stories into impactful content 
+                      that resonates with audiences.
+                    </p>
+                </div>
+                <!-- Buttons -->
+                <div class="about-buttons">
+                  <a href="my resume.pdf" target="_blank" class="button">View Resume</a>
+                  <a href="https://www.linkedin.com/in/lysya-sufia-63863a349/" target="_blank" class="button">LinkedIn</a>
+              </div>
+                <div class="right-column">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="img/me2.jpg" style="width:30%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/me3.jpg" style="width:30%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/me4.jpg" style="width: 30%">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+    <br>
+    <div style="text-align: right">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+<section id="skills" class="skills-section">
+  <h2>Skills</h2>
+  <div class="skills-tabs">
+      <button class="tab-button active" data-tab="software">Software</button>
+      <button class="tab-button" data-tab="expertise">Personal</button>
+      <button class="tab-button" data-tab="language">Interest</button>
+  </div>
+
+  <div class="skills-content">
+      <!-- Software-->
+      <div id="software" class="skills-tab active">
+          <div class="skill-item">
+              <div class="skill-logo"><img src="img/capcut logo.png"></div>
+              <div class="skill-name">CapCut</div>
+              <div class="skill-stars">
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star">★</span>
+              </div>
+          </div>
+          <div class="skill-item">
+              <div class="skill-logo"><img src="img/photoshop logo.png"></div>
+              <div class="skill-name">Adobe Photoshop</div>
+              <div class="skill-stars">
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+              </div>
+          </div>
+          <div class="skill-item">
+              <div class="skill-logo"><img src="img/canva logo.png"></div>
+              <div class="skill-name">Canva</div>
+              <div class="skill-stars">
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+              </div>
+          </div>
+          <div class="skill-item">
+              <div class="skill-logo"><img src="img/vs code logo.png"></div>
+              <div class="skill-name">VSCode</div>
+              <div class="skill-stars">
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star">★</span>
+              </div>
+          </div>
+          <div class="skill-item">
+              <div class="skill-logo"><img src="img/ue.png"></div>
+              <div class="skill-name">Unreal Engine</div>
+              <div class="skill-stars">
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star">★</span>
+              </div>
+          </div>
+          <div class="skill-item">
+              <div class="skill-logo"><img src="img/maya.png"></div>
+              <div class="skill-name">AutoDesk Maya</div>
+              <div class="skill-stars">
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star">★</span>
+              </div>
+          </div>
+      </div>
+
+      <!-- Personal -->
+      <div id="expertise" class="skills-tab">
+          <div class="skill-item">Teamwork</div>
+          <div class="skill-item">Time Management</div>
+          <div class="skill-item">Problem Solving</div>
+          <div class="skill-item">Communication</div>
+          <div class="skill-item">Creativity</div>
+          <div class="skill-item">Customer Service</div>
+      </div>
+
+      <!-- Interest  -->
+      <div id="language" class="skills-tab">
+          <div class="skill-item">Content Creation</div>
+          <div class="skill-item">Photography</div>
+          <div class="skill-item">Videography</div>
+          <div class="skill-item">Designing</div>
+          <div class="skill-item">Learning Language</div>
+          <div class="skill-item">Travelling</div>
+      </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.tab-button').forEach(button => {
+      button.addEventListener('click', () => {
+          document.querySelector('.tab-button.active').classList.remove('active');
+          button.classList.add('active');
+
+          document.querySelectorAll('.skills-tab').forEach(tab => {
+              tab.classList.remove('active');
+          });
+
+          const tabId = button.dataset.tab;
+          document.getElementById(tabId).classList.add('active');
+      });
+  });
+</script>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-container">
+      <a href="photovideo.html" class="project-card">
+        <img src="img/me6.jpg" alt="Videography and Editing">
+        <div class="project-overlay">
+          <h3>PHOTOGRAPHY VIDEOGRAPHY & EDITING</h3>
+        </div>
+      </a>
+      <a href="content-creation.html" class="project-card">
+        <img src="img/me7.jpg" alt="content-creation">
+        <div class="project-overlay">
+          <h3>CONTENT CREATION & MARKETING</h3>
+        </div>
+      </a>
+      <a href="software.html" class="project-card">
+        <img src="img/me9.JPG" alt="software">
+        <div class="project-overlay">
+          <h3>SOFTWARE WORKS</h3>
+        </div>
+      </a>
+    </div>
+  </section>
+  
+  
+    <!-- Contact Page -->
+     <section id="contact">
+    <section class="contact-page">
+            <h2 class="section-title"></h2>
+            <h1 class="title"> ︶꒦꒷♡꒷꒦︶ Get In <span>Touch ︶꒦꒷♡꒷꒦︶</span>
+            </h1>
+            <div class="buttons-container">
+              <div class="button-group">
+                <button class="info-btn">
+                  <img src="img/email.png" alt="Email Icon" class="button-icon">
+                  Email
+                </button>
+                <p class="info-detail">nurulalysya@gmail.com</p>
+              </div>
+              <div class="button-group">
+                <button class="info-btn">
+                  <img src="img/address.png" alt="Address Icon" class="button-icon">
+                  Address
+                </button>
+                <p class="info-detail">
+                  Taman Mekasar 17000 <br> Pasir Mas, Kelantan
+                </p>
+              </div>
+              <div class="button-group">
+                <button class="info-btn">
+                  <img src="img/call logo.png" alt="Call Icon" class="button-icon">
+                  Call
+                </button>
+                <p class="info-detail">0179437434</p>
+              </div>
+            </div>
+            
+          <div class="stars">
+            <img src="img/star (2).png" alt="star" class="star">
+            <img src="img/star (2).png" alt="star" class="star">
+          </div>
+          <div class="stars-left">
+            <img src="img/star (2).png" class="star" alt="Star">
+            <img src="img/star (2).png" class="star" alt="Star">
+          </div>
+          
+        </div>
+        <script>function toggleDetails(id) {
+          const details = document.getElementById(id);
+          if (details.style.display === 'block') {
+            details.style.display = 'none';
+          } else {
+            details.style.display = 'block';
+          }
+        }
+        </script>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/lysyasufia" target="_blank"><img src="img/instagram logo.png" alt="Instagram"></a>
+            <a href="https://wa.me/60179437434" target="_blank"><img src="img/whatsapp logo.png" alt="WhatsApp"></a>
+            <a href="https://www.linkedin.com/in/lysya-sufia-63863a349/"><img src="img/linkedin.png" alt="Call"></a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Lysya Sufia. All Rights Reserved.</p>
+    </footer>
+</body>
+</html
+
+
+
+
