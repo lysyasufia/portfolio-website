@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Change the font-family */
-    background-color: #121A21;
+    background-color: #ececec;
     color: #E5E7EB;
     z-index: 0;
 }
@@ -61,13 +61,11 @@ header {
 .page-title {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #FFFFFF;
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Change the font-family */
+    color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: sticky;
     overflow: hidden; /* Ensure the text doesn't overflow */
 }
-
-
 
 /* Swirl animation */
 @keyframes swirl {
@@ -88,11 +86,13 @@ header {
 .back-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #23323f;
+    background-color: #2C3B4A;
     color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
 /* Introduction Section */
@@ -102,16 +102,15 @@ header {
     padding: 20px;
 }
 
-
 .intro h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     font-family: 'Rubik Glitch', sans-serif;
     color: transparent;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 10px;
-    background: linear-gradient(45deg, #e5b8ff, #b197fc, #b9f2ff);
+    background: linear-gradient(45deg, #c264f8, #8e69fc, #86e6fc);
     -webkit-background-clip: text;
     background-clip: text;
     filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.3));
@@ -120,13 +119,15 @@ header {
 
 .intro p {
     font-size: 1.2rem;
-    color: #ffffff;
+    color: #000000;
     max-width: 800px;
     margin: 0 auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 2px;
     
 }
+
+
 /* Responsive Media Grid */
 .container {
     display: flex;
@@ -205,6 +206,7 @@ header {
 footer {
     text-align: center;
     padding: 1px;
-    background-color: #121A21;
-    color: #E5E7EB;
+    background-color: #ececec;
+    color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
